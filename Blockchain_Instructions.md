@@ -1,8 +1,8 @@
 # Running a Proof of Authority Blockchain
 
-    * Create accounts for two nodes for the network with a separate `datadir` for each using `geth`.
-        * ./geth --datadir node1 account new
-        * ./geth --datadir node2 account new
+1. Create accounts for two nodes for the network with a separate `datadir` for each using `geth`.
+   _ ./geth --datadir node1 account new
+   _ ./geth --datadir node2 account new
 
 2. Next, generate your genesis block.
 
@@ -27,11 +27,13 @@
 4. Now the nodes can be used to begin mining blocks.
 
    - Run the nodes in separate terminal windows with the commands:
+
      - ./geth --datadir node1 --unlock "SEALER_ONE_ADDRESS" --mine --rpc --allow-insecure-unlock
      - ./geth --datadir node2 --unlock "SEALER_TWO_ADDRESS" --mine --port 30304 --bootnodes "enode://SEALER_ONE_ENODE_ADDRESS@127.0.0.1:30303" --ipcdisable --allow-insecure-unlock
-   - **NOTE:** Type your password and hit enter - even if you can't see it visually!
 
-5. Your private PoA blockchain should now be running!
+   - **NOTE:** Type your password and hit enter - replace "SEALER_ONE_ADDRESS with the address from Node 1
+
+5. Your private Blockchain should now be running.
 
 6. With both nodes up and running, the blockchain can be added to MyCrypto for testing.
 
@@ -56,8 +58,6 @@
    - On the next screen, click `Select Wallet File`, then navigate to the keystore directory inside your Node1 directory, select the file located there, provide your password when prompted and then click `Unlock`.
 
    - This will open your account wallet inside MyCrypto.
-
-   - Looks like we're filthy rich! This is the balance that was pre-funded for this account in the genesis configuration; however, these millions of ETH tokens are just for testing purposes.
 
    - In the `To Address` box, type the account address from Node2, then fill in an arbitrary amount of ETH:
 
