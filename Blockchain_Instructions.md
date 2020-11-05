@@ -1,4 +1,4 @@
-## Running a Proof of Authority Blockchain
+## How to Start & Run a Proof of Authority Blockchain
 
 1. Create accounts for two nodes for the network with a separate `datadir` for each using `geth`.
 
