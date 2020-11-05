@@ -1,8 +1,9 @@
-# Running a Proof of Authority Blockchain
+## Running a Proof of Authority Blockchain
 
 1. Create accounts for two nodes for the network with a separate `datadir` for each using `geth`.
-   _ ./geth --datadir node1 account new
-   _ ./geth --datadir node2 account new
+
+   - ./geth --datadir node1 account new
+   - ./geth --datadir node2 account new
 
 2. Next, generate your genesis block.
 
@@ -30,8 +31,8 @@
 
      - ./geth --datadir node1 --unlock "SEALER_ONE_ADDRESS" --mine --rpc --allow-insecure-unlock
      - ./geth --datadir node2 --unlock "SEALER_TWO_ADDRESS" --mine --port 30304 --bootnodes "enode://SEALER_ONE_ENODE_ADDRESS@127.0.0.1:30303" --ipcdisable --allow-insecure-unlock
-
-   - **NOTE:** Type your password and hit enter - replace "SEALER_ONE_ADDRESS with the address from Node 1
+     - Type your password and hit enter - replace "SEALER_ONE_ADDRESS with the address from Node 1
+     - Replace "SEALER_TWO_ADDRESS" with the address from Node 2
 
 5. Your private Blockchain should now be running.
 
