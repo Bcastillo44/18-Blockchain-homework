@@ -1,4 +1,6 @@
-# Proof of Authority Development Chain
+# 18-Blockchain-homework
+
+## Proof of Authority Development Chain
 
 For this assignment, you will take on the role of a new developer at a small bank.
 
@@ -133,5 +135,5 @@ Be sure to include any preliminary setup information, such as installing depende
     ![before_after_click_mycrypto](Images/before_after_click_mycrypto.png)
 
 ---
-© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
-# 18-Blockchain-homework
+
+
