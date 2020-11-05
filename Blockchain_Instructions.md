@@ -27,6 +27,10 @@
      - ./geth --datadir node1 init networkname.json
      - ./geth --datadir node2 init networkname.json
 
+![Initialize_Node_1](Screenshots/Initialize_Node_1.png)
+
+![Initialize_Node_2](Screenshots/Initialize_Node_2.png)
+
 4. Now the nodes can be used to begin mining blocks.
 
    - Run the nodes in separate terminal windows with the commands:
@@ -35,6 +39,10 @@
      - ./geth --datadir node2 --unlock "SEALER_TWO_ADDRESS" --mine --port 30304 --bootnodes "enode://SEALER_ONE_ENODE_ADDRESS@127.0.0.1:30303" --ipcdisable --allow-insecure-unlock
      - Type your password and hit enter - replace "SEALER_ONE_ADDRESS with the address from Node 1
      - Replace "SEALER_TWO_ADDRESS" with the address from Node 2
+
+![Start_Node_1](Screenshots/Start_Node_1.png)
+
+![Start_Node_2](Screenshots/Start_Node_2.png)
 
 5. Your private Blockchain should now be running.
 
@@ -71,3 +79,5 @@
    - You should see the transaction go from `Pending` to `Successful` in around the same blocktime you set in the genesis.
 
    - You can click the `Check TX Status` button to update the status.
+
+![Transaction_Metadata](Screenshots/Transaction_Metadata.png)
