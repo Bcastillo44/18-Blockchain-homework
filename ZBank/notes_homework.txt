@@ -1,0 +1,12 @@
+./geth --datadir node1 init zbank.json
+
+./geth --datadir node2 init zbank.json
+
+
+./geth --datadir node1 --unlock "0x029D924E1fFf887317A2E9744420a6F661e9EE34" --mine --rpc --allow-insecure-unlock
+
+
+./geth --datadir node2 --unlock "0xa2DDf0A1ffcb430E8b34640B8370dD31d803ee5E" --mine --port 30304 --bootnodes "enode://eecbe35159fe849a3d2476d53bd26dbdf6efbc8fea4539bb05bd8214a8e00197024ac5c9418908c332506e74138cffe37508ba17e281e2d157a4693d01be6056@127.0.0.1:30303" --ipcdisable --allow-insecure-unlock
+
+
+0xc5487f376629203696b3b60e625455c97026958a912a083858ee675f3f734f97
