@@ -19,7 +19,7 @@
 
    - Export genesis configurations. This will fail to create two of the files, but you only need `networkname.json`.
 
-![Puppeth_Configuration](Screenshots/Puppeth_Configurationpng)
+![Puppeth_Configuration](Screenshots/Puppeth_Configuration.png)
 
 3. With the genesis block creation completed, we will now initialize the nodes with the genesis' json file.
 
